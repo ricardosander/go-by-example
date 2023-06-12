@@ -20,5 +20,7 @@ func main() {
 		return fibonacci(number-1) + fibonacci(number-2)
 	}
 
-	fmt.Println(fibonacci(7))
+	for i := 0; i < 10; i++ {
+		fmt.Printf("Fib %d: %d\n", i+1, fibonacci(i))
+	}
 }
